@@ -571,7 +571,7 @@ function print_lunch_menu()
     done | column
 
     if [ "z${CARDINAL_DEVICES_ONLY}" != "z" ]; then
-       echo "... and don't forget the cardinal!"
+       echo "... and don't forget to InitiateWings!"
     fi
 
     echo
