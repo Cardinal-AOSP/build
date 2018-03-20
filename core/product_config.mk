@@ -171,6 +171,7 @@ include $(BUILD_SYSTEM)/device.mk
 # A Cardinal build needs only the Cardinal product makefiles.
 ifneq ($(CARDINAL_BUILD),)
   all_product_configs := $(shell find device -path "*/$(CARDINAL_BUILD)/cardinal.mk")
+  all_product_configs += $(wildcard vendor/cardinal/build/target/product/cardinal_$(CARDINAL_BUILD).mk)
 else
   ifneq ($(strip $(TARGET_BUILD_APPS)),)
   # An unbundled app build needs only the core product makefiles.
