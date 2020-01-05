@@ -240,7 +240,7 @@ $(call project-set-path-variant,ril,TARGET_RIL_VARIANT,hardware/ril)
 -include vendor/extra/BoardConfigExtra.mk
 
 ifneq ($(CARDINAL_BUILD),)
-include vendor/cardinal/config/BoardConfigAosp.mk
+include vendor/cardinal/BoardConfigCardinal.mk
 endif
 
 # The build system exposes several variables for where to find the kernel
